@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "827822128947",
+    "project_id": "mobileapplication-edf3b",
+    "storage_bucket": "mobileapplication-edf3b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:827822128947:android:fef946a674b13611614846",
+        "android_client_info": {
+          "package_name": "vn.edu.usth.ircclient"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "827822128947-42ia3jg32oevskpf0hq0q7uuftm2oc77.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYdVGRyZHBy-KV54pjqma8pCPV2BT3nrk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "827822128947-42ia3jg32oevskpf0hq0q7uuftm2oc77.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:827822128947:android:e5d12ec90c38627c614846",
+        "android_client_info": {
+          "package_name": "vn.edu.usth.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "827822128947-42ia3jg32oevskpf0hq0q7uuftm2oc77.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYdVGRyZHBy-KV54pjqma8pCPV2BT3nrk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "827822128947-42ia3jg32oevskpf0hq0q7uuftm2oc77.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
