@@ -29,7 +29,6 @@ import de.hdodenhof.circleimageview.CircleImageView;
 public class RegistrationActivity extends AppCompatActivity {
 
     FirebaseAuth auth;
-    FirebaseDatabase database;
     FirebaseStorage storage;
     String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
     Uri imageUri;
@@ -42,7 +41,7 @@ public class RegistrationActivity extends AppCompatActivity {
         setContentView(R.layout.activity_registration);
 
         auth=FirebaseAuth.getInstance();
-        database = FirebaseDatabase.getInstance();
+        FirebaseDatabase database = FirebaseDatabase.getInstance("https://mobileapplication-edf3b-default-rtdb.asia-southeast1.firebasedatabase.app");
         storage=FirebaseStorage.getInstance();
 
         TextView txt_Signin = findViewById(R.id.Signin);
@@ -106,7 +105,7 @@ public class RegistrationActivity extends AppCompatActivity {
                                                                 if(task.isSuccessful()){
                                                                     startActivity(new Intent(RegistrationActivity.this, HomeActivity.class));
                                                                 }
-                                                                else{
+                                                                 else{
                                                                     Toast.makeText(RegistrationActivity.this, "Error in Creating User", Toast.LENGTH_SHORT).show();
                                                                 }
                                                             }
@@ -119,7 +118,7 @@ public class RegistrationActivity extends AppCompatActivity {
                                 }
                                 else{
 
-                                    imageURI="https://firebasestorage.googleapis.com/v0/b/mobileapplication-edf3b.appspot.com/o/profileicon.png?alt=media&token=ccb1ef8a-fdb4-4c9d-897d-5275cf083d9f";
+                                    imageURI="https://firebasestorage.googleapis.com/v0/b/mobileapplication-edf3b.appspot.com/o/profileicon.png?alt=media&token=e8c365bd-1903-435d-8b6e-480e897d9a37";
                                     Users users = new Users(auth.getUid(),name,email,imageURI);
                                     reference.setValue(users).addOnCompleteListener(new OnCompleteListener<Void>() {
                                         @Override
