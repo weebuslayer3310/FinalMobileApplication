@@ -23,12 +23,23 @@
             android:textSize="25dp"
             android:textStyle="bold" />
 
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/profileicon"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
+
 
         <EditText
+            android:id="@+id/RegistrationName"
             android:layout_width="326dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_10sdp"
-            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_15sdp"
             android:layout_marginEnd="@dimen/_10sdp"
             android:layout_marginRight="@dimen/_10sdp"
             android:background="@drawable/edittext_shape"
@@ -38,6 +49,7 @@
             android:textColor="@color/black" />
 
         <EditText
+            android:id="@+id/RegistrationEmail"
             android:layout_width="326dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_10sdp"
@@ -52,6 +64,7 @@
 
 
         <EditText
+            android:id="@+id/RegistrationPassword"
             android:layout_width="326dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_10sdp"
@@ -66,6 +79,7 @@
             android:textColor="@color/black" />
 
         <EditText
+            android:id="@+id/RegistrationConfirmPassword"
             android:layout_width="326dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_10sdp"
@@ -80,6 +94,7 @@
             android:textColor="@color/black" />
 
         <TextView
+            android:id="@+id/SignupButton"
             android:layout_width="347dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_10sdp"
@@ -110,6 +125,7 @@
             android:textSize="@dimen/_15sdp"/>
 
         <TextView
+            android:id="@+id/Signin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sign in"

@@ -39,15 +39,16 @@ public class LoginActivity extends AppCompatActivity {
                 String email=loginEmail.getText().toString();
                 String password=loginPassword.getText().toString();
 
+
                 if(TextUtils.isEmpty(email) || TextUtils.isEmpty(password)){
                     Toast.makeText(LoginActivity.this, "Enter valid Data", Toast.LENGTH_SHORT).show();
                 }
                 else if(!email.matches(emailPattern)){
-                    loginEmail.setError("Envalid Email");
+                    loginEmail.setError("invalid Email");
                     Toast.makeText(LoginActivity.this, "Envalid email", Toast.LENGTH_SHORT).show();
                 }
                 else if(password.length()>6){
-                    loginPassword.setError("Envalid password");
+                    loginPassword.setError("invalid password");
                     Toast.makeText(LoginActivity.this, "Please enter valid password", Toast.LENGTH_SHORT).show();
                 }
                 else{
@@ -55,7 +56,7 @@ public class LoginActivity extends AppCompatActivity {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if(task.isSuccessful()){
-                                startActivity(new Intent(LoginActivity.this, UserActivity.class));
+                                startActivity(new Intent(LoginActivity.this, HomeActivity.class));
                             }
                             else{
                                 Toast.makeText(LoginActivity.this, "there is some error\nplease try again", Toast.LENGTH_SHORT).show();
