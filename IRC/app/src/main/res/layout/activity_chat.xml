@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity">
+
+    <LinearLayout
+        android:id="@+id/headTag"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/lightblue"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/profileicon"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/spartan_bold"
+            android:text="Hacker anonymous"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/chat1"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/headTag"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+        </LinearLayout>
+        <LinearLayout
+            android:background="@drawable/friend_shape"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="do you know Wilma?"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:fontFamily="@font/spartan_regular"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/chat2"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/chat1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:background="@drawable/user_shape"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Wilma Who?"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:fontFamily="@font/spartan_regular"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/chat3"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/chat2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:background="@drawable/friend_shape"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="WillDisBigDFitInYoMOUTH\nSIKEEEEEEE"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                android:fontFamily="@font/spartan_regular"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/chat3"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:background="@drawable/user_shape"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=".........."
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:fontFamily="@font/spartan_regular"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/chat3"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:background="@drawable/user_shape"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=".........."
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:fontFamily="@font/spartan_regular"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="left"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/backIcon"
+            android:layout_width="49dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/backicon" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <EditText
+            android:background="@drawable/shape_item"
+            android:layout_width="340dp"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:id="@+id/sendIcon"
+            android:src="@drawable/sendicon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
