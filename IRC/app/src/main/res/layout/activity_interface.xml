@@ -21,6 +21,7 @@
             android:layout_weight="1"
             android:fontFamily="@font/spartan_bold"
             android:text="Chat"
+            android:textColor="@color/white"
             android:textAlignment="center"
             android:textSize="20dp"
             android:textStyle="bold" />
@@ -49,7 +50,7 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_margin="10dp"
-            android:src="@drawable/profileicon"
+            android:src="@drawable/avatar"
             app:civ_border_color="#FF000000"
             app:civ_border_width="2dp" />
 
@@ -93,7 +94,7 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_margin="10dp"
-            android:src="@drawable/profileicon"
+            android:src="@drawable/avatar"
             app:civ_border_color="#FF000000"
             app:civ_border_width="2dp" />
 
@@ -136,7 +137,7 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_margin="10dp"
-            android:src="@drawable/profileicon"
+            android:src="@drawable/avatar"
             app:civ_border_color="#FF000000"
             app:civ_border_width="2dp" />
 
@@ -180,7 +181,7 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_margin="10dp"
-            android:src="@drawable/profileicon"
+            android:src="@drawable/avatar"
             app:civ_border_color="#FF000000"
             app:civ_border_width="2dp" />
 
@@ -207,6 +208,22 @@
                 android:textColor="#ff0008" />
 
         </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
 
     </LinearLayout>
 

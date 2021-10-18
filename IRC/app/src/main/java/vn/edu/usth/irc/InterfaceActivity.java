@@ -1,6 +1,9 @@
 package vn.edu.usth.irc;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
 
 import android.app.Dialog;
 import android.content.Intent;
@@ -74,5 +77,7 @@ public class InterfaceActivity extends AppCompatActivity {
                 startActivity(new Intent(InterfaceActivity.this, ChatActivity.class));
             }
         });
+
+
     }
 }

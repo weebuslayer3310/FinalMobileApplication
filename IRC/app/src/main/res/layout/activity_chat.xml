@@ -19,7 +19,7 @@
             android:layout_width="90dp"
             android:layout_height="90dp"
             android:layout_margin="10dp"
-            android:src="@drawable/profileicon"
+            android:src="@drawable/ava2"
             app:civ_border_color="#FF000000"
             app:civ_border_width="2dp" />
 
@@ -27,10 +27,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/spartan_bold"
-            android:text="Hacker anonymous"
+            android:text="Crush"
             android:textAlignment="center"
             android:textSize="20dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
 
     </LinearLayout>
 
@@ -57,10 +58,12 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:padding="7dp"
+                android:fontFamily="@font/spartan_regular"
                 android:text="do you know Wilma?"
                 android:textAlignment="center"
                 android:textSize="16dp"
-                android:fontFamily="@font/spartan_regular"/>
+                android:textColor="@color/white"/>
 
         </LinearLayout>
 
@@ -79,12 +82,14 @@
             android:layout_height="match_parent"
             android:layout_weight="1">
 
+
             <TextView
                 android:background="@drawable/user_shape"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="Wilma Who?"
                 android:textAlignment="center"
+                android:padding="7dp"
                 android:textSize="16dp"
                 android:fontFamily="@font/spartan_regular"/>
 
@@ -122,12 +127,14 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/spartan_regular"
+                android:padding="7dp"
                 android:text="WillDisBigDFitInYoMOUTH\nSIKEEEEEEE"
                 android:textAlignment="center"
                 android:textSize="14sp"
-                android:fontFamily="@font/spartan_regular"/>
+                android:textColor="@color/white"/>
 
         </LinearLayout>
     </LinearLayout>
@@ -177,6 +184,7 @@
                 android:layout_height="match_parent"
                 android:text=".........."
                 android:textAlignment="center"
+                android:layout_marginLeft="7dp"
                 android:textSize="16dp"
                 android:fontFamily="@font/spartan_regular"/>
 
@@ -196,29 +204,53 @@
 
         <ImageView
             android:id="@+id/backIcon"
-            android:layout_width="49dp"
+            android:layout_width="20dp"
+            android:layout_margin="5dp"
             android:layout_height="wrap_content"
-            android:src="@drawable/backicon" />
+            android:src="@drawable/qqqq" />
 
     </LinearLayout>
 
     <LinearLayout
-        android:layout_marginBottom="20dp"
-        android:layout_alignParentBottom="true"
         android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
-        android:layout_height="40dp">
+        android:layout_margin="3dp"
+        android:layout_height="wrap_content">
 
-        <EditText
-            android:background="@drawable/shape_item"
-            android:layout_width="340dp"
-            android:layout_height="match_parent"/>
+        <androidx.cardview.widget.CardView
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/purple_200"
+            app:cardCornerRadius="540dp"
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingStart="10dp"
+                android:hint="Type your message..."
+                android:textColor="@color/white"
+                android:fontFamily="@font/spartan_regular"
+                android:background="@null"/>
 
-        <ImageView
-            android:id="@+id/sendIcon"
-            android:src="@drawable/sendicon"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            app:cardBackgroundColor="@color/purple_500"
+            app:cardCornerRadius="540dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp">
+            <ImageView
+                android:id="@+id/sendIcon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/send2">
+
+            </ImageView>
+
+        </androidx.cardview.widget.CardView>
 
     </LinearLayout>
 

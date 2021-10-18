@@ -15,7 +15,7 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_margin="10dp"
-            android:src="@drawable/profileicon"
+            android:src="@drawable/ava2"
             app:civ_border_color="#FF000000"
             app:civ_border_width="2dp" />
 
@@ -45,4 +45,6 @@
         </LinearLayout>
 
     </LinearLayout>
+
+
 </RelativeLayout>
