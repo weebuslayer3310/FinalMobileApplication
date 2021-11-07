@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="addServer"
+        android:id="@+id/addServer"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_add">
+        <menu>
+            <item
+                android:title="Open existing server..."
+                android:id="@+id/existing"/>
+
+            <item
+                android:title="Create new server..."
+                android:id="@+id/CreateNew"/>
+        </menu>
+    </item>
+
+
+    <item
+        android:title="setting"
+        android:id="@+id/setting"/>
+
+    <item
+        android:title="about"
+        android:id="@+id/about"/>
+
+    <item
+        android:title="exit"
+        android:id="@+id/exit"/>
+
+</menu>
