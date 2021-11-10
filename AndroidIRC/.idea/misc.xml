@@ -4,10 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/AndroidIRC/app/src/main/res/drawable/text_border.xml" value="0.22407407407407406" />
-        <entry key="..\:/Users/ASUS/AndroidStudioProjects/AndroidIRC/app/src/main/res/layout/activity_main.xml" value="0.2552083333333333" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/AndroidIRC/app/src/main/res/layout/activity_chat.xml" value="0.264" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/AndroidIRC/app/src/main/res/layout/activity_main.xml" value="0.4" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/AndroidIRC/app/src/main/res/layout/activity_wait.xml" value="0.2552083333333333" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/AndroidIRC/app/src/main/res/layout/cspopup.xml" value="0.4" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/AndroidIRC/app/src/main/res/layout/ospopup.xml" value="0.2552083333333333" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/AndroidIRC/app/src/main/res/layout/wmpopup.xml" value="0.2552083333333333" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/AndroidIRC/app/src/main/res/menu/menu.xml" value="0.264" />
       </map>
     </option>

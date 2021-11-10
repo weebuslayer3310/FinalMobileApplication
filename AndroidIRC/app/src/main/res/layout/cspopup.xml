@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/spartan_bold"
-        android:text="Create Server:"
+        android:text="Create Channel:"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,12 +33,12 @@
         app:layout_constraintVertical_bias="0.433" />
 
     <Button
-        android:backgroundTint="@color/blue"
-        android:textColor="@color/white"
         android:id="@+id/csSubmit"
         android:layout_width="115dp"
         android:layout_height="44dp"
+        android:backgroundTint="@color/blue"
         android:text="Confirm"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.945"
